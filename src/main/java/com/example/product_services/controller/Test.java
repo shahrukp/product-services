@@ -9,13 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class Test {
 
 
-    // http://localhost:8888/product/api/message
+    // http://localhost:8080/product/api/message for springboot port
+    // http://localhost:8082/product/api/message for docker port
+
     @GetMapping("message")
     public String testAPI(){
         return "product_services_response 9091--------2";
     }
 
-    //http://localhost:9091/product/api/get/code
+    //http://localhost:8080/product/api/get/code
+    //http://localhost:8082/product/api/get/code
+
     @GetMapping("get/code")
     public  int code(){
 
